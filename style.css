@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    min-height: 100vh;
+    padding-top: 3em;
+    font-family: 'Libre Franklin', sans-serif;
+}
+main p{
+    font-size: 20px;
+}
+.logo{
+    margin-bottom: 3em;
+}
+.title{
+    display: flex;
+    margin-bottom: 1em;
+}
+h1{
+    font-weight:300 ;
+    font-size: 2em;
+    padding-right: 0.2em;
+}
+h2{
+    font-size: 2em;
+    font-weight: 700;
+}
+.text1{
+    margin-bottom: 1em;
+}
+.imgil{
+    width: 60vw;
+    margin-top: 2em;
+    margin-bottom: 2.5em;
+}
+.illu{
+    width: 60vw;
+}
+.icons{
+    display: flex;
+    width: 5em;
+    height: 2em;
+    justify-content: space-between;
+}
+.icon.f{
+    color:white;
+    border-radius: 50%;
+    background-color: hsl(223, 87%, 63%);
+}
+.icon{
+    color: hsl(223, 87%, 63%);
+    padding: 0.2em;
+}
+.emailForm{
+    width: 30em;
+}
+.ema{
+    width: 24em;
+    margin-right: 1em;
+    height: 2em;
+    border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 59%);
+    padding-left: 0.5em;
+}
+.sub{
+    width: 10em;
+    height: 2em;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+
+small{
+    visibility: hidden;
+}
+.sub:hover{
+    cursor: pointer;
+    background-color: hsl(223, 100%, 88%);
+}
+.icon:hover{
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icon.f:hover{
+    color: hsl(223, 87%, 63%);
+    background-color: white;
+    border-radius: 50%;
+}
+.emailForm:invalid .ema{
+    border: 1px solid hsl(354, 100%, 66%);
+}
+.emailForm:invalid .error{
+    color: hsl(354, 100%, 66%);
+    visibility: visible;
+}
